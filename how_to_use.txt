@@ -1,0 +1,19 @@
+install docker desktop
+sign in to dockerhub and docker desktop
+docker desktop:
+> check docker install: cli -> "docker"
+>pull hello-world image and run it 
+
+assure that you are logged in: docker login
+
+Build docker image: docker build -t <imagename>
+
+run container : docker run -p 5000:5000 <imagename>
+
+tag your image: docker tag <imagename> shiwangupadhyay/<imagename>:latest1
+
+push image to dockerhub: docker push shiwangupadhyay/<imagename>:latest1
+
+pull image from dockerhub: docker pull shiwangupadhyay/<imagename>:latest1
+
+run the pulled image: docker run -p 5000:5000 shiwangupadhyay/<imagename>:latest1
